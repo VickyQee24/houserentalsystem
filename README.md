@@ -22,9 +22,62 @@
                   g)	UpdateDetails
                   h)	SignUp
                   i)	TenantLogin
+                          TABLE STRUCTURE
+              TABLE NAME: admin
+              SI.NO    FIELD NAME	DATATYPE	    DESCRIPTION
+              1	       Username	Varchar(20)   username
+              2        Password	Varchar(20)   password
+              
+        TABLE NAME: Tenant
+              SI.NO   FIELD NAME	DATATYPE	    DESCRIPTION
+              1	      Username	Varchar(20)   Username
+              2	      Password	varchar(20)   Password
+              3	      Email	Varchar(50)   Email
+              4	      Phone	Varchar(15)   Phone
+              5	      Date	Varchar(20)   Date
+ 
+        TABLE NAME: Tenant Details
+              SI.NO   FIELD NAME	DATATYPE	    DESCRIPTION
+              1	      Name	Varchar(20)   Describes the name of the tenant
+              2	      Area	varchar(50)   Describes the area in which the rental house is available
+              3	      Rooms	Varchar(10)   Describe the number of rooms in the house
+              4	      House	Varchar(15)   Describes the name of the rental house
+              5	      People	Varchar(10)   Describes the number of people in the selected house
+              6	      Paid	Varchar(10)   Describes whether the tenant has paid the rent or not
+
+
+        TABLE NAME: House Details
+              SI.NO   FIELD NAME	DATATYPE	    DESCRIPTION
+              1	      Area	Varchar(20)   Describes the area in which the rental house is available
+              2	      Id	          varchar(10)   Describes the ID of the house.
+              3	      Housename	Varchar(20)   Describes the name of the rental house
+              4	      Rooms	Varchar(10)   Describes the number of rooms
+              5	      Booked	Varchar(10)   Describes whether the room has been booked or not.
+
+         TABLE NAME: Issue
+              SI.NO   FIELD NAME	DATATYPE	    DESCRIPTION
+              1	      Name	Varchar(20)   Describe the name of the tenant
+              2	      Email	varchar(30)   Describes the email of the tenant
+              3	      Issue	Varchar(500)  Describes the issue faced by the tenant
+
+         TABLE NAME: rent		
+              SI.NO   FIELD NAME    DATATYPE	    DESCRIPTION
+              1	      Name	Varchar(20)   Describes the name of the tenant
+              2	      CreditCard	varchar(20)   Describes the credit card number of the tenant
+              3	      Amount	Varchar(10)   Describes the amount to be paid for the rent
+              4	      Date	Varchar(20)   Describes the amount to be paid for the rent
                   j)	TenantInterface
                   k)	House
                   l)	Agreement
                   m)	ReportIssue
+                  
+                           The project is implemented with the following features:
+             1. The tenant button is selected in the home window.
+             2. The look for a house button is clicked and the required area, required rooms and required house are selected and register button is clicked.
+             3. The pay rent button is clicked. Now the name, credit card number and amount are entered and the pay rent button is clicked to pay the rent.
+             4. The report an issue button is clicked. Now the name, email and the issue in the house are sent to the admin when the report button is clicked.
+             5. In the admin interface the update house details button is clicked and the new rental house details like area, rooms and house name are updated.
+             6. The view house details button is selected to view the details of tenants after registration
+             7. The view feedback button is clicked to view the issue faced by the tenants in their respective houses.
                   n)	PayRent
                   o)	RentalSystem
